@@ -18,8 +18,8 @@ How to use it
 
 * The user name for each page is automatically generated. If you want to connect using a specific user name, you can do it by specifying the `username` parameter in the query string (e.g., connecting to `http://127.0.0.1/web-xmpp/?username=cool_user_name`
 
-* All the messages are sent by default to the group chat, thus, received by everyone connected in a given moment. If you want to sent a private message to a user you can use the `<-` operator. If you write in the text area a message with the form `username@web-xmpp <- msg` this will send a private message to `username@web-xmpp`.
+* All the messages are sent by default to the group chat, thus, received by everyone connected at a given moment. If you want to send a private message to a user you can use the `<-` operator: if you write in the text area a message with the form `username@web-xmpp <- msg` this will send a private message to `username@web-xmpp`.
 
-* The server also open a standard TCP port listening for connection. You can use you favourite XMPP client to connect to the server and participate to the group chat. The multi-user chat room is called `web-xmpp`.
+* The server also opens a standard TCP port listening for connection. You can use you favourite XMPP client to connect to the server and participate to the group chat. The multi-user chat room is called `web-xmpp`.
 
 Have fun.
