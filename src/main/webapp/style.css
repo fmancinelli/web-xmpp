@@ -1,0 +1,90 @@
+/*
+ * Web XMPP CSS stylesheet
+ * (C) 2012 by Fabio Mancinelli <fabio@mancinelli.me>
+ *
+ * This work is licensed under a Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) License.
+ * http://creativecommons.org/licenses/by-sa/3.0/
+ */
+ body {
+	margin: 0px;
+	background-image: url(images/background.png);
+	font-family: "Lora";
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#header_container {
+	border-bottom: 1px solid #B0B0B0;
+}
+
+#header {
+	padding-left: 10px;
+}
+
+#header h1 {
+	color: #21759B;
+	font-family: Georgia;
+	font-size: 32pt;
+	font-weight: normal;
+	margin-bottom: 0px;
+	text-shadow: 1px 1px #E0E0E0;
+}
+
+#header h2 {
+	color: #9F8158;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-top: -7px;
+	text-shadow: 1px 1px #E0E0E0;
+}
+
+#header h2>a:visited {
+	color: #9F8158;
+}
+
+#info_container {
+	border-bottom: 1px solid #B0B0B0;
+}
+
+#info {
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+#messages {
+	padding: 10px;
+}
+
+#message_area {	
+	background-color: #F0F0F0;
+	width: 100%;
+	border-top: 1px solid #B0B0B0;
+	padding: 10px;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1000;
+}
+
+#message_text {
+	width: 98%;
+}
+
+p.system_message {
+	color: #21759B;
+	font-weight: bold;
+}
+
+p.presence_message {
+	color: #21759B;
+}
+
+p.own_message {
+	color: #9F8158;
+	font-weight: bold;
+}

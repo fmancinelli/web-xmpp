@@ -1,0 +1,35 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js'></script>
+<script type='text/javascript' src='js/strophe.js'></script>
+<script type='text/javascript' src='js/strophe.muc.js'></script>
+<script type='text/javascript' src='js/web-xmpp.js'></script>
+</head>
+<body>
+<div id="header_container">
+  <div id="header">
+    <h1>Web XMPP</h1>
+    <h2>A <a href="http://mina.apache.org/vysper/">Vysper</a> + <a href="http://strophe.im/">Strophe.js</a> powered web chat</h2>
+  </div>
+</div>
+<div id="info_container">
+  <div id="info">
+    <p>This chat automatically connects to the XMPP server and allow to all the users who opened the page to write message in a multi-user chat room.</p>
+    <p>A user name can be specified by loading the page with the <code>username</code> parameter. (e.g. <code>http://.../web-xmpp/?username=foo</code>)</p>
+
+    <p>The user will automatically quit the chat room once the page is closed.</p>
+
+    <p>You can send private messages to a given user by using the <code>&lt;-</code> operator. For example <code>user@web-xmpp &lt;- Hello</code> will send a private message to <code>user</code>.</p>
+  </div>
+</div>
+</div>
+<div id="messages">
+</div>
+<br/>
+<br/>
+<div id="message_area">
+  <input id="message_text" type="text" onkeypress="handleKeyPress(event)"/>
+</div>
+</body>
